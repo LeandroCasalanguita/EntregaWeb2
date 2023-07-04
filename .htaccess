@@ -5,5 +5,5 @@
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
     
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^api/(.*)$ router.php?resource=$1 [QSA,L,END]
+    RewriteRule ^api/(.*)$ router-api.php?resource=$1 [QSA,L,END]
 </IfModule>
